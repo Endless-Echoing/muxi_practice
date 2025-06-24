@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+        }
+        .middle {
+            width: 500px;
+            background-color: yellow;
+            flex-shrink: 0;
+        }
+        .left {
+            flex: 1;
+            background-color: blue;
+        }
+        .right {
+            flex: 1;
+            background-color: red; 
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

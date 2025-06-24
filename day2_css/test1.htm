@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>test1</title>
+        <style>
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+              "header header header"
+              "sidebar-left main sidebar-right"
+              "footer footer footer";
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 2fr 1fr;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .header{
+            grid-area:header;
+            background-color: #4CAF50;
+            color:black;
+            padding: 10px;
+        }
+        .sidebar2{
+            grid-area:sidebar-left;
+            background-color: #2196F3;
+            color: white;
+            padding: 10px;
+        }
+        .sidebar{
+            grid-area:sidebar-right;
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+        }
+        .footer{
+            grid-area:footer;
+            background-color:gold;
+            color:black;
+            padding:10px;
+        }
+        .main{
+            grid-area:main;
+            background-color: #655959;
+            padding: 10px;
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <h1>这里是标题</h1>
+            </header>
+            <aside class="sidebar2">
+                <p>侧边栏2</p>
+            </aside>
+            <main class="main">
+                <p>这里是一些文字</p>
+                <p>再来一大段文字:3.141592653589793238462643383279502884197169399375105820974944 59230781640628620899 86280 34825 34211 7067982148 08651 32823 06647</p>
+                <h2>地图投影</h2>
+                <p><img src="image.png" alt="Pulpit rock" width="504" height="278"></p>
+            </main>
+            <aside class="sidebar">
+                <p>侧边栏</p>
+            </aside>
+            <footer class="footer">
+                <p>没人关注的页脚</p>
+            </footer>
+        </div> 
+    </body>
+</html>

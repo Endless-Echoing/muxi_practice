@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test3</title>
+        <style>
+            .rect{
+                margin:auto;
+                position: relative;
+                width: 600px; 
+                height:300px; 
+                background-color: #ccc;
+                overflow: hidden;
+            }
+            .circle{
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background-color: #fc0;
+                border-radius: 50%;
+            }
+            .circlelt{
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
+            .circlebr{
+                bottom: 0;
+                right: 0;
+                transform:translate(50%, 50%)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rect"> 
+            <div class="circle circlelt" ></div>
+            <div class="circle circlebr" ></div>
+        </div>
+    </body>
+</html>
